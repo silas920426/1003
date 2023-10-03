@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace _0926
 {
@@ -44,11 +38,10 @@ namespace _0926
 
                 CheckBox cb = new CheckBox();
                 cb.Content = $"{drink.Key}";
-                cb.Width = 120;
+                cb.Width = 100;
                 cb.FontSize = 18;
                 cb.FontWeight = FontWeights.Bold;
                 cb.Foreground = Brushes.Blue;
-                cb.Width = 200;
                 cb.Margin = new Thickness(5);
                 cb.VerticalAlignment = VerticalAlignment.Center;
                 
@@ -121,7 +114,7 @@ namespace _0926
             }
         }
 
-        private void button_click(object sender, RoutedEventArgs e)
+        private void Orderbutton_click(object sender, RoutedEventArgs e)
         {
             double total = 0.0;
             double sellPrice = 0.0;
